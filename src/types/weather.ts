@@ -51,6 +51,13 @@ export interface LocationData {
   timezone: string
   timezoneOffset: number
 }
+export interface ImportMetaEnv {
+  readonly VITE_OPENWEATHER_API_KEY: string;
+}
+
+export interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
 
 export interface WeatherCondition {
   id: number

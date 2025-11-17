@@ -69,7 +69,8 @@ A beautiful, modern weather dashboard built with React, TypeScript, and Tailwind
 
 ## 🔧 Configuration
 
-### API Setup
+### API Setup  
+
 
 1. Visit [OpenWeatherMap](https://openweathermap.org/api)
 2. Sign up for a free account
