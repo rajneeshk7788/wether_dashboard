@@ -34,37 +34,20 @@ A beautiful, modern weather dashboard built with React, TypeScript, and Tailwind
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd weather-dashboard
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    npm install
    # or
    yarn install
    ```
-
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   ```
-   
-   Add your OpenWeatherMap API key:
-   ```env
-   VITE_OPENWEATHER_API_KEY=your_api_key_here
-   ```
-
-4. **Start the development server**
+2. **Start the development server**
    ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-5. **Open your browser**
+3. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ## 🔧 Configuration
@@ -119,45 +102,7 @@ src/
 - Optimized mobile layout
 - Progressive Web App capabilities
 
-## 🚀 Deployment
 
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Add environment variables in Vercel dashboard
-4. Deploy automatically
-
-### Netlify
-
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to Netlify
-3. Add environment variables in Netlify dashboard
-
-### Other Platforms
-
-The app can be deployed to any static hosting service that supports SPA routing.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit changes: `git commit -m 'Add feature'`
-4. Push to branch: `git push origin feature-name`
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [OpenWeatherMap](https://openweathermap.org/) for weather data API
-- [Tailwind CSS](https://tailwindcss.com/) for styling
-- [Framer Motion](https://www.framer.com/motion/) for animations
-- [Lucide](https://lucide.dev/) for icons
-
-## 📞 Support
 
 If you have any questions or need help, please:
 - Open an issue on GitHub
