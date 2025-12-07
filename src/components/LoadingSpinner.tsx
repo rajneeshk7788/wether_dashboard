@@ -10,10 +10,10 @@ export default function LoadingSpinner() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center">
-      <div className="text-center">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center px-4">
+      <div className="text-center w-full max-w-md">
         {/* Animated Weather Icons */}
-        <div className="flex justify-center space-x-4 mb-8">
+        <div className="flex justify-center space-x-3 sm:space-x-4 mb-6 sm:mb-8">
           {weatherIcons.map(({ icon: Icon, delay }, index) => (
             <motion.div
               key={index}
@@ -29,7 +29,7 @@ export default function LoadingSpinner() {
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="w-12 h-12 text-blue-500"
+              className="w-10 h-10 sm:w-12 sm:h-12 text-blue-500"
             >
               <Icon className="w-full h-full" />
             </motion.div>
@@ -41,12 +41,12 @@ export default function LoadingSpinner() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="space-y-4"
+          className="space-y-3 sm:space-y-4"
         >
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white px-4">
             Loading Weather Dashboard
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 px-4">
             Fetching the latest weather data...
           </p>
         </motion.div>
@@ -56,7 +56,7 @@ export default function LoadingSpinner() {
           initial={{ opacity: 0, scaleX: 0 }}
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="mt-8 w-64 mx-auto"
+          className="mt-6 sm:mt-8 w-full max-w-xs sm:max-w-sm mx-auto px-4"
         >
           <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
             <motion.div
