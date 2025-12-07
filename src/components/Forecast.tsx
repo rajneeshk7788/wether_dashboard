@@ -70,6 +70,9 @@ export default function Forecast() {
                 <p className="text-xs text-gray-500 dark:text-gray-500">
                   {day.time}
                 </p>
+                <p className="text-xs text-gray-500 dark:text-gray-500">
+                  {day.date}
+                </p>
               </div>
               
               <div className="flex items-center space-x-3">
