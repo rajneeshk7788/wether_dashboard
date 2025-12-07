@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { useWeather } from '../contexts/WeatherContext'
 import { mockWeatherData } from '../services/weatherService'
 import { 
-  Thermometer, 
   Droplets, 
   Wind, 
   Eye, 
@@ -10,8 +9,7 @@ import {
   Cloud,
   Sun,
   CloudRain,
-  Snowflake,
-  CloudSnow
+  Snowflake
 } from 'lucide-react'
 
 export default function WeatherCard() {

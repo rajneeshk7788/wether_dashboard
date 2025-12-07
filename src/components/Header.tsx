@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Search, MapPin, Heart, Settings, Sun, Moon, Monitor } from 'lucide-react'
-import { useTheme } from '../contexts/ThemeContext'
+import { Search, MapPin, Heart, Sun, Moon, Monitor } from 'lucide-react'
+import { useTheme, type Theme } from '../contexts/ThemeContext'
 import { useWeather } from '../contexts/WeatherContext'
 
 export default function Header() {
-  const { theme, setTheme, actualTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const { location, fetchWeather, isFavorite, addToFavorites, removeFromFavorites } = useWeather()
   const [searchQuery, setSearchQuery] = useState('')
   const [isSearching, setIsSearching] = useState(false)
